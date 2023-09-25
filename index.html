@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4360b8e58.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/Personal-Name.png" class="logo"> -->
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>R</span>ajan KP</h1>
+            </div>
+        </div>
+
+    </div>
+    <!--------------------------About-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img class="about-me-img" src="images/about-me-bird.jpg">
+                </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me-desc">I'm a passionate Angular developer with a knack for crafting dynamic and responsive web applications. With 10 plus years of experience in the field, I've honed my skills in front-end development, specializing in Angular, and have a
+                        proven track record of delivering elegant and efficient solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span class="skills-side-title">UI Frameworks</span><br>I have 6 plus years of experience in using web frameworks like
+                                <div class="skill-chips">
+                                    <span>Angular</span>
+                                    <span>React</span>
+                                    <span>NextJS</span>
+                                </div>
+                            </li>
+                            <li><span class="skills-side-title">Primary Skills</span><br>I have 10 plus years of experience as front end developer
+                                <div class="skill-chips">
+                                    <span>HTML, HTML5</span>
+                                    <span>CSS, SCSS, SASS, LESS</span>
+                                    <span>javascript, typescript, ES6</span>
+                                    <span>NodeJS</span>
+                                </div>
+                            </li>
+                            <li><span class="skills-side-title">SDLC Skills</span><br>I have 11 years of experience in Software Development Life Cycle using
+                                <div class="skill-chips">
+                                    <span>Agile</span>
+                                    <span>Confluence</span>
+                                    <span>JIRA</span>
+                                    <span>Scrum, Kanban</span>
+                                </div>
+                            </li>
+                            <li><span class="skills-side-title">Secondary Skills</span><br>I have 3 years of experience in backend related skills
+                                <div class="skill-chips">
+                                    <span>Java</span>
+                                    <span>MySQL</span>
+                                    <span>Python</span>
+                                    <span>C, C++</span>
+                                    <span>JSP</span>
+                                    <span>jQuery</span>
+                                    <span>Dojo</span>
+                                </div>
+                            </li>
+
+                            <li><span class="skills-side-title">Other Skills</span><br>I have a beginner level experience in Photo, Video Editing and Networking
+                                <div class="skill-chips">
+                                    <span>Photoshop</span>
+                                    <span>Adobe After Effects</span>
+                                    <span>Adobe Premiere Pro</span>
+                                    <span>Networking</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><span class="skills-side-title">WooliesX - Javascript Developer</span><br>Aug 2022 - Jun 2023</li>
+                            <li><span class="skills-side-title">Bank of America - Software Engineer 2A</span><br>Sep 2021 - May 2022</li>
+                            <li><span class="skills-side-title">Prodapt - Lead Engineer</span><br>Oct 2019 - Sep 2021</li>
+                            <li><span class="skills-side-title">Renault Nissan - Assistant Manager</span><br>Jul 2017 - Oct 2019</li>
+                            <li><span class="skills-side-title">HCL - Lead Engineer</span><br>Dec 2013 - Jul 2017</li>
+                            <li><span class="skills-side-title">Worklogix - Developer</span><br>Aug 2012 - Nov 2013</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span class="skills-side-title">Masters in Computer Application - 7.8(CGPA)</span><br>2008 - 2011</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------Services-------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Application Development</h2>
+                    <p>Developing web applications using latest web frameworks with responsive design
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Api Development</h2>
+                    <p>Developing Node, Java, Python based backend REST api's
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                    <h2>Editing and Networking</h2>
+                    <p>Can use photoshop, premiere pro and after effects to edit photos and videos. Can create simulation of network model in Cisco Packet Tracer
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Services-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Woolies Product Search</h3>
+                        <p>An application to perform product search using NextJS</p>
+                        <a target="blank" href="https://product-search-1be0c.web.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Bank of America - Home Loans</h3>
+                        <p>An application to apply for loans online</p>
+                        <a target="blank" href="https://www.bankofamerica.com/mortgage/home-mortgage/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <!--------------------------Contact-------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rajan.tsm@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +61-488396175</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rajan.tsm"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/rajan_k_p"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/rajan.tsm/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rajan-kp/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a class="btn btn2" href="resume/Rajan_FrontEnd_Developer_PDF.pdf" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" required placeholder="Your Name">
+                        <input type="email" name="Email" required placeholder="Your Email">
+                        <input type="tel" name="Phone" required placeholder="Your Phone">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Rajan.</p>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents')
+
+        function opentab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzjjljIbDHexkgmuwQrUqWRf90Ghv5zVjik4CY0sI2S5fwgyt_pYL4_p-O_XyOFBqhI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    console.log('Success!', response);
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
